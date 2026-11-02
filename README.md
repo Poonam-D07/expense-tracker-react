@@ -8,11 +8,11 @@ A responsive, multi-page expense tracker built with **React**, **Vite** and **Ta
 
 | Dashboard | Transactions |
 |---|---|
-| ![Dashboard](./screenshots/dashboard.png) | ![Transactions](./screenshots/transactions.png) |
+| ![Dashboard](./screenshots/day6.png)  |
 
 | Mobile | Dark Mode |
 |---|---|
-| ![Mobile](./screenshots/mobile.png) | ![Dark mode](./screenshots/dark.png) |
+| ![Mobile](./screenshots/day6About.png) | 
 
 ## ✨ Features
 
