@@ -13,7 +13,7 @@ import { useEffect, useState } from "react";
 ];
 
 const inputClass =
-  "w-full rounded-lg border border-slate-300 px-3 py-2 text-sm outline-none transition focus:border-indigo-500 focus:ring-2 focus:ring-indigo-200";
+  "w-full rounded-lg border border-slate-300 px-3 py-2 text-sm outline-none transition focus:border-indigo-500 focus:ring-2 focus:ring-indigo-200 dark:border-slate-600 dark:bg-slate-700 dark:text-slate-100 dark:placeholder-slate-400";
 
   function ExpenseForm({ onAdd, editItem, isEditing, onUpdate, onCancel }) {
   const [title, setTitle] = useState("");
@@ -92,8 +92,8 @@ const inputClass =
 
   
   return (
-    <form onSubmit={handleSubmit} className="mb-10 rounded-2xl bg-white p-6 shadow">
-       <h3 className="mb-4  text-xl font-bold text-slate-800">
+    <form onSubmit={handleSubmit} className="mb-10 rounded-2xl dark:bg-slate-800 dark:shadow-none p-6 shadow">
+       <h3 className="mb-4  text-xl font-bold dark:text-slate-100">
        {isEditing ? "✏️ Edit Transaction" : "Add Transaction"}
       </h3>
       <div className="grid grid-cols-1 gap-4 md:grid-cols-2">
@@ -120,7 +120,7 @@ const inputClass =
         </div>
 
         <div>
-          <label htmlFor="amount" className="mb-7 block text-sm font-medium text-slate-500">
+          <label htmlFor="amount" className="mb-7 block text-sm font-medium dark:text-slate-400">
              Amount (₹)
             </label>
 
@@ -136,7 +136,7 @@ const inputClass =
         
         <div>
              {/* Type Select */}
-          <label htmlFor="type" className="mb-1 block text-sm font-medium text-slate-600">
+          <label htmlFor="type" className="mb-1 block text-sm font-medium dark:text-slate-300">
              Type
           </label>
 

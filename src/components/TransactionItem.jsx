@@ -3,9 +3,9 @@
     const isIncome = type ==="income";
     const isHighSpend = !isIncome && amount>2000;
   return (
-    <div className="flex items-center justify-between py-4 transition hover:bg-slate-50">
+    <div className="flex items-center justify-between py-4 transition dark:hover:bg-slate-700/50">
         <div className="flex items-center gap-4">
-            <div className={`flex h-12 w-12 items-center justify-center rounded-full text-xl ${isIncome ? "bg-green-100": "bg-red-100"}`}>
+            <div className={`flex h-12 w-12 items-center justify-center rounded-full text-xl ${isIncome ? "dark:bg-green-900/40": "dark:bg-red-900/40"}`}>
                 {icon}
             </div>
 
@@ -23,8 +23,8 @@
                         {
                             Food: "bg-orange-100 text-orange-700",
                             Travel: "bg-blue-100 text-blue-700",
-                            Bills: "bg-red-100 text-red-700",
-                            Income: "bg-green-100 text-green-700",
+                            Bills: "dark:bg-red-900/40 text-red-700",
+                            Income: "dark:bg-green-900/40 text-green-700",
                             Lifestyle: "bg-purple-100 text-purple-700"    
                         }[category] || "bg-slate-100 text-slate-700"
                     }`}>
